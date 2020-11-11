@@ -12,3 +12,12 @@ class TestCustomer(unittest.TestCase):
     #@unittest.skip("Delete this line to run the test")
     def test_customer_has_cash(self):
         self.assertEqual(100, self.customer.wallet)
+
+    # Purchase item (booze, food)
+    
+
+    # Reduce money in wallet by prince of item
+
+    # Send money from wallet to till
+
+

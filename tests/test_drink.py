@@ -12,3 +12,10 @@ class TestDrink(unittest.TestCase):
     #@unittest.skip("Delete this line to run the test")
     def test_drink_price(self):
         self.assertEqual(5, self.drink.price)
+
+
+
+
+    # remove drink from pub stock
+    
+    # give drink to customer 
