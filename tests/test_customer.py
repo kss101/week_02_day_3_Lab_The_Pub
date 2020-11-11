@@ -6,6 +6,7 @@ from src.drink import Drink
 class TestCustomer(unittest.TestCase):
     def setUp(self):
         self.customer = Customer("Meatloaf", 100)
+        self.item_to_buy = Drink("Bourbon", 5)
 
     #@unittest.skip("Delete this line to run the test")
     def test_customer_has_name(self):
@@ -14,6 +15,14 @@ class TestCustomer(unittest.TestCase):
     #@unittest.skip("Delete this line to run the test")
     def test_customer_has_cash(self):
         self.assertEqual(100, self.customer.wallet)
+
+    def test_buy_item(self):
+        self.customer.buy_item(self.item_to_buy)
+
+        # self.assertEqual(1, self.customer.drinks)
+
+
+
 
     # # Purchase item (booze, food)
     # def test_customer_buy_item(self):
